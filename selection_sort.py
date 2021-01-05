@@ -1,7 +1,7 @@
 def selection_sort(array):
     for main_index in range(len(array)):
         min_number = main_index
-        for inner in range(main_index+1, len(array)):
+        for inner in range(main_index + 1, len(array)):
             if array[min_number] > array[inner]:
                 min_number = inner
 
@@ -10,4 +10,15 @@ def selection_sort(array):
     return array
 
 
-print(selection_sort([0, 2, 1, 6, 8, 3]))
+def selectionSort(array):
+    """We create sorting algorithm by add element to a new list"""
+    new_array = []
+
+    for i in range(len(array)):
+        new_array.append(min(array))
+        array.remove(min(array))
+
+    return new_array
+
+
+print(selectionSort([0, 2, 1, 6, 8, 3]))
