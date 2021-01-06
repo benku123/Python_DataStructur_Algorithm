@@ -11,7 +11,7 @@ def selection_sort(array):
 
 
 def selectionSort(array):
-    """We create sorting algorithm by add element to a new list"""
+    """We create sorting algorithm by adding element to a new list"""
     new_array = []
 
     for i in range(len(array)):
@@ -21,4 +21,3 @@ def selectionSort(array):
     return new_array
 
 
-print(selectionSort([0, 2, 1, 6, 8, 3]))
